@@ -1,63 +1,109 @@
 <html>
-   <head>
-    <title>studentname</title>
-    
-  
+<header>
+
+ <style>
+    body{
+        background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fbackground%2F&psig=AOvVaw374z8q1Z1OTNUyhK1lW9WR&ust=1605974488778000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPDXw6i_ke0CFQAAAAAdAAAAABAD);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    form{
+        width: 100%;
         
-        
+    }
     
-</head>
+    
+    </style>
+
+
+    <title  >
+        newstudent
+    </title> 
+   
+</header>
 
 <body>
- 
-    
-    
-    <!--nav-->
-        <a href="index.html" target="_blank"> Home </a>
-        <a href="Studentlist.html"> StudentList </a>
-        <a href="newstudent.html"> New Student </a>
-        <!--nav#-->
+    <a href="index.html">Home</a> &nbsp;
+    <a href="studentlist.html">student list </a> &nbsp;
+    <a href="newstudent">new student </a>
+<hr>
 
-        <hr/>
-        <!--Section-->
-    <form action="#" method ="get">
+    
+
+    <fieldset>
+        <legend>Personal Information</legend>
         <p>
-            <label> Full Name:
-            <input type="text" name ="txtname">
+            <label>
+                Full Name: 
+                <input type="text" name="txtFullName" required> 
+        
             </label>
-            </p>
-            <p>
-                <lable> Birthdate:
-                        <input type="date" name="txtBD">
-                </lable>
-                </p>
-                <lable>Gender:
-                    <input type = "radio"name="Gender" value = "male"> male
-                    <input type = "radio"name="Gender"  value = "female"> Female
-                </lable>
-                </p>
-                <p>
-                    <lable>
-                        choose your faculty
-                        <select name="faculty">
-                            <option value= "fcit"> Fcit</option>
-                            <option value ="blah"> blah</option>
-                            <option value ="pharamacy"> pharamacy</option>
-                        </select>
-                    </lable>
-                </p>
-                <label>
-                    Address:
-                    <textarea rows = "10" cols ="20" name="txtarea"></textarea>
-                </label>
-    </form>
+        </p>
+           <p> 
+            <label>
+                Birthdate: 
+                <input type="date" name="txtBirthDate">
+                
+            </label>
+        </p>
+        <p>
+            <label>
+                Gender: 
+                <input type="radio" name="gender" value="male">
+                Male
+                <input type="radio" name="gender" value="female">
+                Female
+            </label>
+        </p>
+    </fieldset>
 
-    <!--Section#-->
+    <fieldset>
+        <legend>Contact Information</legend>
+        <p>
+            <label>
+                Email: 
+                <input type="email" name="txtEmail">
+        
+            </label>
+        </p>
+        <p>
+            <label>
+                Phone: 
+                <input type="tel" name="txtPhone">
+        
+            </label>
+        </p>
+        <p>
+            <label>
+                Address:
+                <textarea rows="5" cols="100" name="txtAddress"></textarea>
+            </label>
+        </p>
+    </fieldset>
 
-    <hr/>
-    <!--footer-->
-    &copy; <a href="http://www.fue.edu.eg">Future University in Egypt</a> &nbsp; &nbsp; &mdash;&nbsp; &nbsp; <a href="mailto:20132627@fue.edu.eg">contact us</a>
-    <!--#footer-->
+    <fieldset>
+        <legend>University Information</legend>
+        <p><label >
+            Choose Your Faculty:
+            <select name="faculty">
+                <option value="f1">Computer science       
+                </option>
+                <option value="f2">Engeniring
+                </option>
+                <option value="f3">Pharmacy
+                </option>
+        
+            </select>
+        </label></p>
+    </fieldset>
 
-   </body>
+    <input type="submit" class="button" value="submit" name="submit">
+
+   
+    <hr>
+</body>
+<footer>
+    &copy;Future university in Egypt - <a href="https://www.google.com/" target="_blank"> contact us </a>
+<hr>
+</footer>
 </html>
