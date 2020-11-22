@@ -1,31 +1,49 @@
-title{
-  text-align: center; 
-  color:4CAF50;
-  text-transform: uppercase;
-font-size: 32px;
-font-family: 'Times New Roman', Times, serif
-}
-
-body{
-/*  background-image: url(https://www.fue.edu.eg/ImageHandler.ashx?Id=6429&SS=7236ec28809dbdd72855fd7784ae9d01);*/
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 ul{
   list-style-type: none;
-  border: 1px solid #e7e7e7; 
-  background-color: #f3f3f3;
+  border: 1px solid rgb(216, 119, 63);
   overflow: hidden;
-  padding: 0px;
-  margin: 0px;
+  
 
 }
-li{
-  float: left;
-}
-
 a{
   text-decoration: none;
-  color: #008CBA;
+  color: rgb(197, 154, 74);
+}
+li{
+  list-style-type: none;
+  float: center;
+}
+li a{
+  list-style-type: none;
+
+  display: inline-block;
+  padding: 14px;
+}
+.nav-right{
+  float: right;
+}
+li a:hover{
+  background-color: aquamarine;
+}
+li a.active{
+  background-color: blue;
+  color: antiquewhite;
+}
+table{
+  widows: 100%;
+  border-collapse: collapse;
+}
+thead{
+  background-color:blue;
+  color: white;
+}
+tbody tr:nth-child(even){
+  background-color: wheat;
+}
+div{
+  border : 4px;
+border-style: none;
+border-radius: 1px;
+box-shadow: white;
+
 }
